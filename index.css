@@ -27,33 +27,7 @@ body{
   width: 100vw;
   font-family: var(--ff--100--);
   background: var(--clr--100--);
-  position: relative;
 }
-
-body::before,
-body::after {
-  content: "";
-  position: absolute;
-  width: 30rem;
-  height: 30rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-blend-mode: lighten;
-  z-index: -1; /* Place the pseudo-elements behind the body content */
-}
-
-body::before {
-  top: -15rem;
-  left: -15rem;
-  background-image: url(/images/bg-pattern-top.svg);
-}
-
-body::after {
-  bottom: -15rem;
-  right: -15rem;
-  background-image: url(/images/bg-pattern-bottom.svg);
-}
-
 
 .topImage{
   position: absolute;
